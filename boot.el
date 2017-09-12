@@ -21,7 +21,7 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (if (window-system)
-      (split-window-right (floor (* 0.75 (window-width)))))
+      (split-window-right (floor (* 0.85 (window-width)))))
 
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
