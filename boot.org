@@ -61,23 +61,19 @@
 ** Setting the Lisp environment
 
 #+BEGIN_SRC emacs-lisp  
-  ;; (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel
-  ;; Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel
-  ;; Bank Common Lisp\\1.3.18\\sbcl.core"))))
-
-  ;; (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
-  ;; (add-hook 'lisp-interaction-mode-hook 'sly-mode)
+  (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
+  (add-hook 'lisp-interaction-mode-hook 'sly-mode)
 #+END_SRC
 
 ** Org and LaTeX specific settings   
 
 #+BEGIN_SRC emacs-lisp   
-  ;; (setq Tex-auto-save t)
-  ;; (setq TeX-parse-self t)
-  ;; (require 'tex-mik) 
-  ;; (load "auctex.el" nil t t)
-  ;; (setq org-export-with-LaTeX-fragments "dvipng")
-  ;; (setq org-return-follows-link t)
+  (setq Tex-auto-save t)
+  (setq TeX-parse-self t)
+  (require 'tex-mik) 
+  (load "auctex.el" nil t t)
+  (setq org-export-with-LaTeX-fragments "dvipng")
+  (setq org-return-follows-link t)
 #+END_SRC
 
 ** Tools
