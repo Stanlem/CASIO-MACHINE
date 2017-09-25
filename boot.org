@@ -47,10 +47,11 @@
 
 #+BEGIN_SRC emacs-lisp  
   (add-hook 'lisp-interaction-mode-hook 'slime-mode)
+  (add-hook 'lisp-mode-hook 'slime-mode)
   (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
   (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
   (add-hook 'lisp-mode-hook 'electric-pair-mode)
-  (add-hook 'lisp-mode-hook 'slime-mode)
+
 #+END_SRC
 
 
@@ -97,8 +98,6 @@
 #+BEGIN_SRC emacs-lisp
   (defalias 'yes-or-no-p 'y-or-n-p)
   (global-set-key (kbd "M-p") 'ace-window)
-
-
 #+END_SRC
 
 
@@ -113,6 +112,6 @@
   (defun lisp ()
     (interactive)
     (split-window-horizontally)
-    (find-file "~/.emacs.d/casio.cl")
+    (find-file "~/.emacs.d/CASIOMACHINE/casio.cl")
     (sly))
 #+END_SRC

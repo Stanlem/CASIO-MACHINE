@@ -1,4 +1,4 @@
-% Created 2017-09-24 Sun 23:07
+% Created 2017-09-24 Sun 23:13
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -60,18 +60,18 @@
 	 (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.core"))))
 	 (setq Tex-auto-save t)
 	 (setq TeX-parse-self t)
-	 (require 'tex-mik) 
+	 (require 'tex-mik)
 	 (load "auctex.el" nil t t)
 	 (setq org-export-with-LaTeX-fragments "dvipng")
-	 (w32-send-sys-command 61488))
-	((string-equal user-full-name "iMac")
-	 (princ "hello"))
-	((string-equal user-full-name "Chromebook")
-	 (princ "world"))))
+	 (toggle-frame-fullscreen))
+	 ((string-equal user-full-name "iMac")
+	  (princ "hello"))
+	 ((string-equal user-full-name "Chromebook")
+	  (princ "world"))))
 
-(which-term)
+  (which-term)
 
-;; (toggle-frame-fullscreen)
+  ;; (toggle-frame-fullscreen)
 \end{verbatim}
 
 

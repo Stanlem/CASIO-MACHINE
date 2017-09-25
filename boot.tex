@@ -1,4 +1,4 @@
-% Created 2017-09-24 Sun 23:13
+% Created 2017-09-25 Mon 00:31
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -16,13 +16,13 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
-\author{Thinkpad}
+\author{Chromebook}
 \date{\today}
 \title{BOOT.ORG}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
-  pdfcreator={Emacs 25.2.1 (Org mode 8.2.10)}}
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
 \begin{document}
 
 \maketitle
@@ -62,8 +62,7 @@
 	 (setq TeX-parse-self t)
 	 (require 'tex-mik)
 	 (load "auctex.el" nil t t)
-	 (setq org-export-with-LaTeX-fragments "dvipng")
-	 (toggle-frame-fullscreen))
+	 (setq org-export-with-LaTeX-fragments "dvipng"))
 	 ((string-equal user-full-name "iMac")
 	  (princ "hello"))
 	 ((string-equal user-full-name "Chromebook")
@@ -80,10 +79,10 @@
 
 \begin{verbatim}
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
+(add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
 (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
 (add-hook 'lisp-mode-hook 'electric-pair-mode)
-(add-hook 'lisp-mode-hook 'slime-mode)
 \end{verbatim}
 
 
@@ -93,9 +92,6 @@
 \begin{verbatim}
 (setq Tex-auto-save t)
 (setq TeX-parse-self t)
-(require 'tex-mik) 
-(load "auctex.el" nil t t)
-
 (setq org-export-with-LaTeX-fragments "dvipng")
 (setq org-return-follows-link t)
 \end{verbatim}
@@ -156,5 +152,5 @@
   (find-file "~/.emacs.d/casio.cl")
   (sly))
 \end{verbatim}
-% Emacs 25.2.1 (Org mode 8.2.10)
+% Emacs 25.2.2 (Org mode 8.2.10)
 \end{document}
