@@ -51,7 +51,6 @@
   (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
   (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
   (add-hook 'lisp-mode-hook 'electric-pair-mode)
-
 #+END_SRC
 
 
