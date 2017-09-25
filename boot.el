@@ -1,7 +1,7 @@
 
 (require 'org)
-;; (if (window-system)
-;;     (split-window-right (floor (* 0.85 (window-width)))))
+(if (window-system)
+    (split-window-right (floor (* 0.85 (window-width)))))
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -37,6 +37,11 @@
 (add-hook 'lisp-mode-hook 'electric-pair-mode)
 (add-hook 'lisp-mode-hook 'slime-mode)
 
+<<<<<<< HEAD
+=======
+(setq Tex-auto-save t)
+(setq TeX-parse-self t)
+>>>>>>> 6e5ed38a16338fad31affc1ded3364c1e06e3d38
 (setq org-export-with-LaTeX-fragments "dvipng")
 (setq org-return-follows-link t)
 
