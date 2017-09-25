@@ -32,10 +32,10 @@
   ;; (toggle-frame-fullscreen)
 
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
+(add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
 (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
 (add-hook 'lisp-mode-hook 'electric-pair-mode)
-(add-hook 'lisp-mode-hook 'slime-mode)
 
 (setq Tex-auto-save t)
 (setq TeX-parse-self t)
@@ -66,5 +66,5 @@
 (defun lisp ()
   (interactive)
   (split-window-horizontally)
-  (find-file "~/.emacs.d/casio.cl")
+  (find-file "~/.emacs.d/CASIOMACHINE/casio.cl")
   (sly))
