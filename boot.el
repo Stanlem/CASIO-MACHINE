@@ -1,7 +1,7 @@
 
 (require 'org)
-;; (if (window-system)
-;;     (split-window-right (floor (* 0.85 (window-width)))))
+(if (window-system)
+    (split-window-right (floor (* 0.85 (window-width)))))
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -23,9 +23,6 @@
 
 (setq Tex-auto-save t)
 (setq TeX-parse-self t)
-(require 'tex-mik) 
-(load "auctex.el" nil t t)
-
 (setq org-export-with-LaTeX-fragments "dvipng")
 (setq org-return-follows-link t)
 
