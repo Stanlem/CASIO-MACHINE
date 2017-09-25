@@ -40,19 +40,15 @@
 
 (require 'org)
 
-;; (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel
-;; Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel
-;; Bank Common Lisp\\1.3.18\\sbcl.core"))))
+(add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
+(add-hook 'lisp-interaction-mode-hook 'sly-mode)
 
-;; (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
-;; (add-hook 'lisp-interaction-mode-hook 'sly-mode)
-
-;; (setq Tex-auto-save t)
-;; (setq TeX-parse-self t)
-;; (require 'tex-mik) 
-;; (load "auctex.el" nil t t)
-;; (setq org-export-with-LaTeX-fragments "dvipng")
-;; (setq org-return-follows-link t)
+(setq Tex-auto-save t)
+(setq TeX-parse-self t)
+(require 'tex-mik) 
+(load "auctex.el" nil t t)
+(setq org-export-with-LaTeX-fragments "dvipng")
+(setq org-return-follows-link t)
 
 (defun halt ()
   (interactive)
