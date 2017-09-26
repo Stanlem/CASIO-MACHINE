@@ -1,35 +1,41 @@
 
-(require 'org)
-(if (window-system)
-    (split-window-right (floor (* 0.85 (window-width)))))
+<<<<<<< HEAD
+      (require 'org)
+      ;; (if (window-system)
+      ;;     (split-window-right (floor (* 0.85 (window-width)))))
+=======
+  (require 'org)
+  (if (window-system)
+      (split-window-right (floor (* 0.85 (window-width)))))
+>>>>>>> 6e5ed38a16338fad31affc1ded3364c1e06e3d38
 
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
+      (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                               ("marmalade" . "https://marmalade-repo.org/packages/")
+                               ("melpa" . "https://melpa.org/packages/")))
 
 
-(keyboard-translate ?\( ?\[)
-(keyboard-translate ?\[ ?\()
-(keyboard-translate ?\) ?\])
-(keyboard-translate ?\] ?\))
+      (keyboard-translate ?\( ?\[)
+      (keyboard-translate ?\[ ?\()
+      (keyboard-translate ?\) ?\])
+      (keyboard-translate ?\] ?\))
 
 
-(defun which-term ()
-  (cond ((string-equal user-full-name "Thinkpad")
-         (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.core"))))
-         (setq Tex-auto-save t)
-         (setq TeX-parse-self t)
-         (require 'tex-mik)
-         (load "auctex.el" nil t t)
-         (setq org-export-with-LaTeX-fragments "dvipng"))
-         ((string-equal user-full-name "iMac")
-          (princ "hello"))
-         ((string-equal user-full-name "Chromebook")
-          (princ "world"))))
+      (defun which-term ()
+        (cond ((string-equal user-full-name "Thinkpad")
+               (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.core"))))
+               (setq Tex-auto-save t)
+               (setq TeX-parse-self t)
+               (require 'tex-mik)
+               (load "auctex.el" nil t t)
+               (setq org-export-with-LaTeX-fragments "dvipng"))
+               ((string-equal user-full-name "iMac")
+                (princ "hello"))
+               ((string-equal user-full-name "Chromebook")
+                (princ "world"))))
 
-  (which-term)
+        (which-term)
 
-  ;; (toggle-frame-fullscreen)
+        ;; (toggle-frame-fullscreen)
 
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
@@ -39,11 +45,11 @@
 
 <<<<<<< HEAD
 =======
-(setq Tex-auto-save t)
-(setq TeX-parse-self t)
+  (setq Tex-auto-save t)
+  (setq TeX-parse-self t)
 >>>>>>> 6e5ed38a16338fad31affc1ded3364c1e06e3d38
-(setq org-export-with-LaTeX-fragments "dvipng")
-(setq org-return-follows-link t)
+  (setq org-export-with-LaTeX-fragments "dvipng")
+  (setq org-return-follows-link t)
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
