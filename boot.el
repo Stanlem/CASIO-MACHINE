@@ -1,24 +1,16 @@
 
-<<<<<<< HEAD
       (require 'org)
       ;; (if (window-system)
       ;;     (split-window-right (floor (* 0.85 (window-width)))))
-=======
-  (require 'org)
-  (if (window-system)
-      (split-window-right (floor (* 0.85 (window-width)))))
->>>>>>> 6e5ed38a16338fad31affc1ded3364c1e06e3d38
 
       (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                                ("marmalade" . "https://marmalade-repo.org/packages/")
                                ("melpa" . "https://melpa.org/packages/")))
 
-
       (keyboard-translate ?\( ?\[)
       (keyboard-translate ?\[ ?\()
       (keyboard-translate ?\) ?\])
       (keyboard-translate ?\] ?\))
-
 
       (defun which-term ()
         (cond ((string-equal user-full-name "Thinkpad")
@@ -38,18 +30,19 @@
         ;; (toggle-frame-fullscreen)
 
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
+(add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
 (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
 (add-hook 'lisp-mode-hook 'electric-pair-mode)
-(add-hook 'lisp-mode-hook 'slime-mode)
 
-<<<<<<< HEAD
-=======
   (setq Tex-auto-save t)
   (setq TeX-parse-self t)
->>>>>>> 6e5ed38a16338fad31affc1ded3364c1e06e3d38
   (setq org-export-with-LaTeX-fragments "dvipng")
   (setq org-return-follows-link t)
+(setq Tex-auto-save t)
+(setq TeX-parse-self t)
+(setq org-export-with-LaTeX-fragments "dvipng")
+(setq org-return-follows-link t)
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
@@ -75,5 +68,5 @@
 (defun lisp ()
   (interactive)
   (split-window-horizontally)
-  (find-file "~/.emacs.d/casio.cl")
+  (find-file "~/.emacs.d/CASIOMACHINE/casio.cl")
   (sly))
