@@ -6,7 +6,10 @@
 * CUSTOM SETTINGS
   
 
-**             (require 'org)
+** Basics
+
+#+BEGIN_SRC emacs-lisp
+            (require 'org)
             ;; (if (window-system)
             ;;     (split-window-right (floor (* 0.85 (window-width)))))
 
@@ -37,3 +40,79 @@
                       (princ "Its working..."))))
 
               (which-term)
+#+END_SRC
+
+  
+** Setting the Lisp environment
+
+#+BEGIN_SRC emacs-lisp  
+  (add-hook 'lisp-interaction-mode-hook 'slime-mode)
+  (add-hook 'lisp-mode-hook 'slime-mode)
+  (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
+  (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
+  (add-hook 'lisp-mode-hook 'electric-pair-mode)
+#+END_SRC
+
+
+** Org and LaTeX specific settings   
+
+#+BEGIN_SRC emacs-lisp   
+    (setq Tex-auto-save t)
+    (setq TeX-parse-self t)
+    (setq org-export-with-LaTeX-fragments "dvipng")
+    (setq org-return-follows-link t)
+#+END_SRC
+
+
+** Web
+
+#+BEGIN_SRC emacs-lisp
+  (add-hook 'sgml-mode-hook 'emmet-mode)
+  (add-hook 'html-mode-hook 'emmet-mode)
+  (add-hook 'css-mode-hook 'emmet-mode)
+  (add-hook 'js-mode-hook 'emmet-mode)
+#+END_SRC
+
+
+** Smex
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+;; Old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+#+END_SRC
+
+
+** Ido
+
+#+BEGIN_SRC emacs-lisp
+  (setq ido-enable-flex-matching t)
+  (setq ido-everywhere t)
+  (ido-mode 1)
+#+END_SRC
+
+
+** Navigating
+
+#+BEGIN_SRC emacs-lisp
+  (defalias 'yes-or-no-p 'y-or-n-p)
+  (global-set-key (kbd "M-p") 'ace-window)
+#+END_SRC
+
+
+** Tools
+
+#+BEGIN_SRC emacs-lisp   
+  (defun halt ()
+    (interactive)
+    (save-some-buffers)
+    (kill-emacs))
+
+  (defun lisp ()
+    (interactive)
+    (split-window-horizontally)
+    (find-file "~/.emacs.d/CASIOMACHINE/casio.cl")
+    (sly))
+#+END_SRC
