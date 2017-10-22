@@ -40,7 +40,10 @@
 ** Web
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 691ce51e2e493d703fa41cd94e2c25213ab3be05
 * TODO Scratches
 
 - [ ] A function to detect the workstation (Thinkpad, Chromebook) and install the desired configurations for each of them.
