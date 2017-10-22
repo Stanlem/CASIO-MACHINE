@@ -29,8 +29,6 @@
 
   (which-term)
 
-  ;; (toggle-frame-fullscreen)
-
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
 (add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
@@ -43,7 +41,9 @@
 (setq org-return-follows-link t)
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
-(add-hook 'css-mode-hook  'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook 'emmet-mode)
+(add-hook 'js-mode-hook 'emmet-mode)
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)

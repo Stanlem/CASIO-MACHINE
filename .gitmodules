@@ -1,0 +1,6 @@
+[submodule "Web/io"]
+	path = Web/Web/io
+	url = https://github.com/casiomachine/casiomachine.github.io.git
+[submodule "io"]
+	path = Web/io
+	url = https://github.com/casiomachine/casiomachine.github.io.git
