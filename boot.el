@@ -4,53 +4,39 @@
 ;;     (split-window-right (floor (* 0.85 (window-width)))))
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-			 ("marmalade" . "https://marmalade-repo.org/packages/")
-			 ("melpa" . "https://melpa.org/packages/")))
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+
 
 (keyboard-translate ?\( ?\[)
 (keyboard-translate ?\[ ?\()
 (keyboard-translate ?\) ?\])
 (keyboard-translate ?\] ?\))
 
+
 (defun which-term ()
   (cond ((string-equal user-full-name "Thinkpad")
-	 (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.core"))))
-	 (setq Tex-auto-save t)
-	 (setq TeX-parse-self t)
-	 (require 'tex-mik)
-	 (load "auctex.el" nil t t)
-	 (setq org-export-with-LaTeX-fragments "dvipng"))
-	((string-equal user-full-name "iMac")
-	 (princ "hello"))
-	((string-equal user-full-name "Chromebook")
-	 (princ "world"))))
+         (setq slime-lisp-implementations '((sbcl ("C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.exe" "--core" "C:\\Program Files\\Steel Bank Common Lisp\\1.3.18\\sbcl.core"))))
+         (setq Tex-auto-save t)
+         (setq TeX-parse-self t)
+         (require 'tex-mik)
+         (load "auctex.el" nil t t)
+         (setq org-export-with-LaTeX-fragments "dvipng"))
+         ((string-equal user-full-name "iMac")
+          (princ "hello"))
+         ((string-equal user-full-name "Chromebook")
+          (princ "world"))
+         ((string-equal user-full-name "Zero")
+          (princ "Its working..."))))
 
-(which-term)
+  (which-term)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 691ce51... Changes on iMac
-=======
->>>>>>> 691ce51... Changes on iMac
-=======
->>>>>>> 691ce51... Changes on iMac
-;; (toggle-frame-fullscreen)
-
->>>>>>> 691ce51e2e493d703fa41cd94e2c25213ab3be05
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
 (add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
 (add-hook 'emacs-lisp-mode-hook 'electric-pair-mode)
 (add-hook 'lisp-mode-hook 'electric-pair-mode)
 
-(setq Tex-auto-save t)
-(setq TeX-parse-self t)
-(setq org-export-with-LaTeX-fragments "dvipng")
-(setq org-return-follows-link t)
 (setq Tex-auto-save t)
 (setq TeX-parse-self t)
 (setq org-export-with-LaTeX-fragments "dvipng")
