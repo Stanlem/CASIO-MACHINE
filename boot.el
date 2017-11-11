@@ -29,8 +29,6 @@
 
   (which-term)
 
-  ;; (toggle-frame-fullscreen)
-
 (add-hook 'lisp-interaction-mode-hook 'slime-mode)
 (add-hook 'lisp-mode-hook 'slime-mode)
 (add-hook 'lisp-interaction-mode-hook 'electric-pair-mode)
