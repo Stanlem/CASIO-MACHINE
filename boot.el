@@ -25,7 +25,9 @@
          ((string-equal user-full-name "iMac")
           (princ "hello"))
          ((string-equal user-full-name "Chromebook")
-          (princ "world"))))
+          (princ "world"))
+         ((string-equal user-full-name "Zero")
+          (princ "Its working..."))))
 
   (which-term)
 
@@ -41,7 +43,9 @@
 (setq org-return-follows-link t)
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
-(add-hook 'css-mode-hook  'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook 'emmet-mode)
+(add-hook 'js-mode-hook 'emmet-mode)
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)

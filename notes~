@@ -1,4 +1,4 @@
-               
+
                                       ______ _______  ______ _ _______ 
                                      /______|_______)/ _____) (_______)
                                      _       _______( (____ | |_     _ 
@@ -22,7 +22,7 @@
 | Files    | Programs | Environments |
 | [[file+emacs:~/.emacs.d/CASIOMACHINE/boot.org][boot.org]] | [[elisp:(browse-url-firefox%20"https://www.duckduckgo.com")][Firefox]]  | [[elisp:(lisp)][Lisp]]         |
 | [[file+emacs:~/.emacs][.emacs]]   | [[elisp:(browse-url-firefox%20"drive.google.com")][Drive]]    | Python       |
-| [[file+emacs:~/.emacs.d/casio.cl][casio.cl]] | [[elisp:(other-window%20(sly))][sly]]      | Arduino      |
+| [[file+emacs:~/.emacs.d/casio.cl][casio.cl]] | [[elisp:(other-window%20(slime))][Slime]]    | Arduino      |
 |          |          | Web          |
 
 
@@ -32,10 +32,10 @@
 
 ** Robotics
 
-| Files     |
-| PILL.org  |
-| TORSO.org |
-|           |
+| Files |
+| [[file:~/.emacs.d/Robotics/MESH.org][MESH]]  |
+| [[file:~/.emacs.d/Robotics/TORSO.org][TORSO]] |
+| [[file:~/.emacs.d/Robotics/PILL.org][PILL]]  |
 
 ** Web
 
@@ -44,6 +44,7 @@
 
 - [ ] A function to detect the workstation (Thinkpad, Chromebook) and install the desired configurations for each of them.
 - [ ] A function to save a session with cursor location, running files and programs, etc.
+
 #+BEGIN_SRC emacs-lisp
 
 #+END_SRC

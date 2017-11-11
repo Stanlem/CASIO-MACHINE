@@ -1,0 +1,9 @@
+canvas {
+    border: 1px solid black;
+    background-color: lightpink;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+}
