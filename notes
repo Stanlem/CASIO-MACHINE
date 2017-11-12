@@ -1,4 +1,4 @@
-                               	    
+
                                          ______ _______  ______ _ _______ 
                                         /______|_______)/ _____) (_______)
                                         _       _______( (____ | |_     _ 
@@ -45,6 +45,9 @@
 
 - [ ] A function to detect the workstation (Thinkpad, Chromebook) and install the desired configurations for each of them.
 - [ ] A function to save a session with cursor location, running files and programs, etc.
+- [ ] A database of Spotify account.
+- [ ] Structure (for study and better understanding of the overall workings) each prolang intended for study.
+
 
 #+BEGIN_SRC emacs-lisp
 
